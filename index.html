@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body onload="initializeGallery()">
+
+    <h1>Accessible Interactive Photo Gallery</h1>
+
+    <div id="image">Hover over or focus on an image to display here.</div>
+
+    <div class="gallery">
+        <figure>
+            <img class="preview" src="spiderman1.jpg" alt="Classic Spider-Man" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Classic Spider-Man</figcaption>
+        </figure>
+
+        <figure>
+            <img class="preview" src="spiderman2.jpg" alt="Miles Morales as Spider-Man" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Miles Morales</figcaption>
+        </figure>
+
+        <figure>
+            <img class="preview" src="spiderman3.jpg" alt="Spider-Man 2099" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Spider-Man 2099</figcaption>
+        </figure>
+
+        <figure>
+            <img class="preview" src="spiderman4.jpg" alt="Spider-Gwen" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Spider-Gwen</figcaption>
+        </figure>
+
+        <figure>
+            <img class="preview" src="spiderman5.jpg" alt="Venom Symbiote Spider-Man" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Venom Symbiote Spider-Man</figcaption>
+        </figure>
+
+        <figure>
+            <img class="preview" src="spiderman6.jpg" alt="Iron Spider Suit" tabindex="0" 
+                 onmouseover="update(this)" onmouseout="undo()" onfocus="update(this)" onblur="undo()">
+            <figcaption>Iron Spider</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
