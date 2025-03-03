@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#image {
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    font-size: 1.2em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+figure {
+    text-align: center;
+}
+
+.preview {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.preview:focus {
+    outline: 3px solid #ff0000;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
